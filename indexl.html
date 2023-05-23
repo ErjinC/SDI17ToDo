@@ -10,11 +10,14 @@
 <body>
   <h1>To-Do List</h1>
 
-  <div> <!--List item submission area-->
+  <div> <!--List item submission area & delete button-->
     <p>Use this text box to add your to-do list items!</p>
     <form id="listform">
       <input type="text" id="listcontent" name="listitem">
       <button type="submit">Add to the List</button>
+    </form>
+    <form id="delete">
+      <button type="button" id="deleteButton" name = "deleteButton" onclick="removeCheckedCheckboxes()">Delete all checked tasks</button>
     </form>
   </div>
 
