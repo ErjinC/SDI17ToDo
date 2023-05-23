@@ -1,13 +1,11 @@
-const form = document.getElementById('listitem');
+const form = document.getElementById('listform');
 
 form.addEventListener('submit', () => {
   event.preventDefault();
-  var listContainer = document.querySelector('#list');
+  var listContainer = document.querySelector('#listcontainer');
   var listElement = document.createElement('p');
-  listElement.innerHTML = `contentcontent`;
+  var listContent = document.getElementById('listcontent').value;
+  listElement.innerHTML = listContent;
   listContainer.appendChild(listElement);
-
-  alert('pls work');
-
 });
 
