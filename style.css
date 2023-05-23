@@ -1,3 +1,6 @@
+body {
+  background-color: #fcffee;
+}
 h1 {
   font-size: 120px;
   width: 50%;
@@ -51,4 +54,9 @@ form {
 #listcontainer {
   font-size: 25px;
   font-family: "Bahnschrift";
+}
+.delete-this {
+  height: 18px;
+  width: 18px;
+  margin: 15px;
 }
