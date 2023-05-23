@@ -8,20 +8,26 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>To-Do List</h1>
+  <h1>The ULTIMATE <br> To-Do List Maker!</h1>
 
-  <div> <!--List item submission area & delete button-->
+  <div class = "form"> <!--List item submission area & delete button-->
     <p>Use this text box to add your to-do list items!</p>
     <form id="listform">
+
       <input type="text" id="listcontent" name="listitem">
-      <button type="submit">Add to the List</button>
-    </form>
-    <form id="delete">
-      <button type="button" id="deleteButton" name = "deleteButton" onclick="removeCheckedCheckboxes()">Delete all checked tasks</button>
+
+      <br> <br>
+
+      <div class = "buttons">
+        <button class="addbutton" type="submit">Add to the List</button>
+
+        <button class="deletebutton" type="button" id="deleteButton" name = "deleteButton" onclick="remove()">Delete All Checked Tasks</button>
+      </div>
+
     </form>
   </div>
 
-  <div> <!--Actual list items go here. Should include actual item and 2 buttons that cross out and delete-->
+  <div class="todolist"> <!--Actual list items go here. Should include actual item and 2 buttons that cross out and delete-->
     <ul id="listcontainer">
 
     </ul>

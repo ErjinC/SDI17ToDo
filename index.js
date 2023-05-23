@@ -23,7 +23,7 @@ form.addEventListener('submit', () => {
   // listContainer.appendChild(document.createElement("br"));
 });
 
-function removeCheckedCheckboxes() {
+function remove() {
   var checked = document.querySelectorAll('.delete-this:checked');
   checked.forEach((elem) => {
     elem.parentElement.style.display = "none";
